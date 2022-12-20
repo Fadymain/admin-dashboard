@@ -11,6 +11,7 @@ const Orders = () => {
         id='gridcomp' 
         dataSource={ordersData}
         allowPaging
+        allowSorting
       >
         <ColumnsDirective>
           {ordersGrid.map((item, index) => (
