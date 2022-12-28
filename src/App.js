@@ -8,7 +8,7 @@ import { useStateContext } from './context/ContextProvider';
 import './App.css';
 
 const App = () => {
-  const { activeMenu, themeSettings, setThemeSettings } = useStateContext();
+  const { activeMenu, themeSettings, setThemeSettings, currentColor } = useStateContext();
 
   return (
     <div>
@@ -23,7 +23,7 @@ const App = () => {
                 hover:bg-light-gray
                 text-white'
                 onClick={() => setThemeSettings(true)}
-                style={{ background: 'blue',
+                style={{ background: currentColor,
                 borderRadius: '50%' }}>
                 <FiSettings />
               </button>
