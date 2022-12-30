@@ -15,6 +15,7 @@ const Notification = () => {
           <button type="button" className="text-white text-xs rounded p-1 px-2 bg-orange-theme "> 5 New</button>
         </div>
         <button
+          className='text-xl'
           color="rgb(153, 171, 180)" 
           bgHoverColor="light-gray" 
           size="2xl" 
