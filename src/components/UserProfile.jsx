@@ -13,11 +13,13 @@ const UserProfile = () => {
       <div className="flex justify-between items-center">
         <p className="font-semibold text-lg dark:text-gray-200">User Profile</p>
         <button
-         className='text-xl'
-         color="rgb(153, 171, 180)"
-         bgHoverColor="light-gray"
-         size="2xl"
-         borderRadius="50%"
+         className='text-2xl'
+         style={{
+          color: "rgb(153, 171, 180)",
+          bgHoverColor: "light-gray",
+          size: "2xl",
+          borderRadius: "50%"
+         }}
         >
           <MdOutlineCancel />
         </button>
@@ -54,13 +56,16 @@ const UserProfile = () => {
         ))}
       </div>
       <div className="mt-5">
-        <Button
+        <button
+          style={{
+            bgColor: currentColor,
+            borderRadius: "10px",
+          }}
           color="white"
-          bgColor={currentColor}
-          text="Logout"
-          borderRadius="10px"
           width="full"
-        />
+        >
+          Logout
+        </button>
       </div>
     </div>
 
