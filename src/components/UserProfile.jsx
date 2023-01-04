@@ -57,16 +57,13 @@ const UserProfile = () => {
         ))}
       </div>
       <div className="mt-5">
-        <button
-          style={{
-            bgColor: currentColor,
-            borderRadius: "10px",
-          }}
+      <Button
           color="white"
+          bgColor={currentColor}
+          text="Logout"
+          borderRadius="10px"
           width="full"
-        >
-          Logout
-        </button>
+        />
       </div>
     </div>
 
