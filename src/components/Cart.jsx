@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
+import { Button } from '.';
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 import { useStateContext } from '../context/ContextProvider';
 import { cartData } from '../data/dummy';
@@ -55,16 +56,13 @@ const Cart = () => {
           </div>
         </div>
         <div className="mt-5">
-          <button
+        <Button
             color="white"
-            style={{
-              width: "full",
-              bgColor: currentColor,
-              borderRadius: "10px",
-            }}
-          >
-            Place Order
-          </button>
+            bgColor={currentColor}
+            text="Place Order"
+            borderRadius="10px"
+            width="full"
+          />
         </div>
       </div>
     </div>
