@@ -18,16 +18,12 @@ const Chat = () => {
         </div>
         <button
           className='text-2xl'
-          onClick={() => setIsClicked(false)}
+          onClick={() => setIsClicked(prev => !prev)}
           style={{
             color: "rgb(153, 171, 180)",
             bgHoverColor: "light-gray",
             borderRadius: "50%"
            }}
-          color="rgb(153, 171, 180)"
-          bgHoverColor="light-gray"
-          size="2xl"
-          borderRadius="50%"
         >
           <MdOutlineCancel />
         </button>
