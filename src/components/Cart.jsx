@@ -5,7 +5,7 @@ import { useStateContext } from '../context/ContextProvider';
 import { cartData } from '../data/dummy';
 
 const Cart = () => {
-  const { currentColor } = useStateContext();
+  const { currentColor, setIsClicked } = useStateContext();
 
   return (
     <div className="bg-half-transparent w-full fixed nav-item top-0 right-0 ">
@@ -13,12 +13,12 @@ const Cart = () => {
         <div className="flex justify-between items-center">
           <p className="font-semibold text-lg">Shopping Cart</p>
           <button
+            onClick={() => setIsClicked(prev => !prev)}
             style={{
               color: "rgb(153, 171, 180)",
-              bgHoverColor: "light-gray",
-              size: "2xl",
               borderRadius: "50%"
             }}
+            className='text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray'
           >
             <MdOutlineCancel />
           </button>
