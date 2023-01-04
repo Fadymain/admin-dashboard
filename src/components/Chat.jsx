@@ -5,7 +5,7 @@ import { chatData } from '../data/dummy';
 import { useStateContext } from '../context/ContextProvider';
 
 const Chat = () => {
-  const { currentColor } = useStateContext();
+  const { currentColor, setIsClicked } = useStateContext();
 
   return (
     <div className="nav-item absolute right-5 md:right-52 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
@@ -17,7 +17,13 @@ const Chat = () => {
           </button>
         </div>
         <button
-          className='text-xl'
+          className='text-2xl'
+          onClick={() => setIsClicked(false)}
+          style={{
+            color: "rgb(153, 171, 180)",
+            bgHoverColor: "light-gray",
+            borderRadius: "50%"
+           }}
           color="rgb(153, 171, 180)"
           bgHoverColor="light-gray"
           size="2xl"
