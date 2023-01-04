@@ -15,7 +15,7 @@ const Notification = () => {
           <button type="button" className="text-white text-xs rounded p-1 px-2 bg-orange-theme "> 5 New</button>
         </div>
         <button
-          className='text-2xl'
+          className='text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray'
           onClick={() => setIsClicked(prev => !prev)}
           style={{
           color: "rgb(153, 171, 180)",

@@ -17,7 +17,7 @@ const Chat = () => {
           </button>
         </div>
         <button
-          className='text-2xl'
+          className='text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray'
           onClick={() => setIsClicked(prev => !prev)}
           style={{
             color: "rgb(153, 171, 180)",
